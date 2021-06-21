@@ -21,6 +21,8 @@ type APIClient struct {
 
 	TbkDgOptimusMaterial  *TbkDgOptimusMaterialService
 	TbkDgMaterialOptional *TbkDgMaterialOptionalService
+	TbkTpwdCreate         *TbkTpwdCreateService
+	GeneralAPI            *GeneralAPI
 }
 
 type service struct {
@@ -41,6 +43,9 @@ func NewAPIClient(sdkConfig *config.SDKConfig) *APIClient {
 
 	c.TbkDgOptimusMaterial = (*TbkDgOptimusMaterialService)(&c.common)
 	c.TbkDgMaterialOptional = (*TbkDgMaterialOptionalService)(&c.common)
+	c.TbkTpwdCreate = (*TbkTpwdCreateService)(&c.common)
+	c.GeneralAPI = (*GeneralAPI)(&c.common)
+
 	return c
 }
 

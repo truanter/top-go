@@ -52,5 +52,5 @@ type UcrowdRankItem struct {
 
 type TbkDgMaterialOptionalResponse struct {
 	BaseResponse
-	Data map[string]interface{} `json:"tbk_dg_material_optional_response" xml:"tbk_dg_material_optional_response"`
+	TbkDgMaterialOptionalResponse map[string]interface{} `json:"tbk_dg_material_optional_response,omitempty" xml:"tbk_dg_material_optional_response"`
 }
