@@ -12,6 +12,7 @@ type TbkDgOptimusMaterialRequest struct {
 	ContentID     int64  `json:"content_id,omitempty"`
 	ContentSource string `json:"content_source,omitempty"`
 	ItemID        int64  `json:"item_id,omitempty"`
+	FavoritesID   string `json:"favorites_id,omitempty"`
 }
 
 type TbkDgOptimusMaterialResponse struct {
