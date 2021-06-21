@@ -45,7 +45,7 @@ var (
 		SignMethod.String(): "md5",
 		Format.String():     "json",
 		V.String():          "2.0",
-		Simplify.String():   false,
+		Simplify.String():   true,
 	}
 )
 
