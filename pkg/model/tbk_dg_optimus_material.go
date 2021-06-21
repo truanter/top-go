@@ -17,5 +17,7 @@ type TbkDgOptimusMaterialRequest struct {
 
 type TbkDgOptimusMaterialResponse struct {
 	BaseResponse
+	IsDefault                     string                 `json:"is_default" xml:"total_count"`
+	TotalCount                    int64                  `json:"total_count" xml:"total_count"`
 	TbkDgMaterialOptionalResponse map[string]interface{} `json:"tbk_dg_optimus_material_response,omitempty" xml:"tbk_dg_optimus_material_response"`
 }

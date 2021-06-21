@@ -52,5 +52,7 @@ type UcrowdRankItem struct {
 
 type TbkDgMaterialOptionalResponse struct {
 	BaseResponse
+	TotalResults                  int64                  `json:"total_results" xml:"total_results"`
+	PageResultKey                 string                 `json:"page_result_key" xml:"page_result_key"`
 	TbkDgMaterialOptionalResponse map[string]interface{} `json:"tbk_dg_material_optional_response,omitempty" xml:"tbk_dg_material_optional_response"`
 }
