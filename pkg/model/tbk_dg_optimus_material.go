@@ -11,7 +11,7 @@ type TbkDgOptimusMaterialRequest struct {
 	DeviceValue   string `json:"device_value,omitempty"`
 	ContentID     int64  `json:"content_id,omitempty"`
 	ContentSource string `json:"content_source,omitempty"`
-	ItemID        int64  `json:"item_id,omitempty"`
+	ItemID        string `json:"item_id,omitempty"`
 	FavoritesID   string `json:"favorites_id,omitempty"`
 }
 
